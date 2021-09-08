@@ -1,0 +1,104 @@
+##
+ # loadstorage.mcfunction
+ # jobsplus
+ #
+ # Created by Zorillac.
+##
+
+# This load the storage to different constants
+# Please read the documentation to edit it at docs.txt
+execute store result score lvl0 jo+.m.cfg run data get storage joplus:config miner.levels[0]
+execute store result score lvl1 jo+.m.cfg run data get storage joplus:config miner.levels[1]
+execute store result score lvl2 jo+.m.cfg run data get storage joplus:config miner.levels[2]
+execute store result score lvl3 jo+.m.cfg run data get storage joplus:config miner.levels[3]
+execute store result score lvl4 jo+.m.cfg run data get storage joplus:config miner.levels[4]
+execute store result score lvl5 jo+.m.cfg run data get storage joplus:config miner.levels[5]
+execute store result score lvl6 jo+.m.cfg run data get storage joplus:config miner.levels[6]
+execute store result score lvl7 jo+.m.cfg run data get storage joplus:config miner.levels[7]
+execute store result score lvl8 jo+.m.cfg run data get storage joplus:config miner.levels[8]
+execute store result score lvl9 jo+.m.cfg run data get storage joplus:config miner.levels[9]
+execute store result score lvl10 jo+.m.cfg run data get storage joplus:config miner.levels[10]
+execute store result score lvl11 jo+.m.cfg run data get storage joplus:config miner.levels[11]
+execute store result score lvl12 jo+.m.cfg run data get storage joplus:config miner.levels[12]
+execute store result score lvl13 jo+.m.cfg run data get storage joplus:config miner.levels[13]
+execute store result score lvl14 jo+.m.cfg run data get storage joplus:config miner.levels[14]
+execute store result score lvl15 jo+.m.cfg run data get storage joplus:config miner.levels[15]
+execute store result score lvl16 jo+.m.cfg run data get storage joplus:config miner.levels[16]
+execute store result score lvl17 jo+.m.cfg run data get storage joplus:config miner.levels[17]
+execute store result score lvl18 jo+.m.cfg run data get storage joplus:config miner.levels[18]
+execute store result score lvl19 jo+.m.cfg run data get storage joplus:config miner.levels[19]
+execute store result score lvl20 jo+.m.cfg run data get storage joplus:config miner.levels[20]
+execute store result score lvl21 jo+.m.cfg run data get storage joplus:config miner.levels[21]
+execute store result score lvl22 jo+.m.cfg run data get storage joplus:config miner.levels[22]
+execute store result score lvl23 jo+.m.cfg run data get storage joplus:config miner.levels[23]
+execute store result score lvl24 jo+.m.cfg run data get storage joplus:config miner.levels[24]
+execute store result score lvl25 jo+.m.cfg run data get storage joplus:config miner.levels[25]
+execute store result score lvl26 jo+.m.cfg run data get storage joplus:config miner.levels[26]
+execute store result score lvl27 jo+.m.cfg run data get storage joplus:config miner.levels[27]
+execute store result score lvl28 jo+.m.cfg run data get storage joplus:config miner.levels[28]
+execute store result score lvl29 jo+.m.cfg run data get storage joplus:config miner.levels[29]
+execute store result score lvl30 jo+.m.cfg run data get storage joplus:config miner.levels[30]
+execute store result score lvl31 jo+.m.cfg run data get storage joplus:config miner.levels[31]
+execute store result score lvl32 jo+.m.cfg run data get storage joplus:config miner.levels[32]
+execute store result score lvl33 jo+.m.cfg run data get storage joplus:config miner.levels[33]
+execute store result score lvl34 jo+.m.cfg run data get storage joplus:config miner.levels[34]
+execute store result score lvl35 jo+.m.cfg run data get storage joplus:config miner.levels[35]
+execute store result score lvl36 jo+.m.cfg run data get storage joplus:config miner.levels[36]
+execute store result score lvl37 jo+.m.cfg run data get storage joplus:config miner.levels[37]
+execute store result score lvl38 jo+.m.cfg run data get storage joplus:config miner.levels[38]
+execute store result score lvl39 jo+.m.cfg run data get storage joplus:config miner.levels[39]
+execute store result score lvl40 jo+.m.cfg run data get storage joplus:config miner.levels[40]
+execute store result score lvl41 jo+.m.cfg run data get storage joplus:config miner.levels[41]
+execute store result score lvl42 jo+.m.cfg run data get storage joplus:config miner.levels[42]
+execute store result score lvl43 jo+.m.cfg run data get storage joplus:config miner.levels[43]
+execute store result score lvl44 jo+.m.cfg run data get storage joplus:config miner.levels[44]
+execute store result score lvl45 jo+.m.cfg run data get storage joplus:config miner.levels[45]
+execute store result score lvl46 jo+.m.cfg run data get storage joplus:config miner.levels[46]
+execute store result score lvl47 jo+.m.cfg run data get storage joplus:config miner.levels[47]
+execute store result score lvl48 jo+.m.cfg run data get storage joplus:config miner.levels[48]
+execute store result score lvl49 jo+.m.cfg run data get storage joplus:config miner.levels[49]
+execute store result score lvl50 jo+.m.cfg run data get storage joplus:config miner.levels[50]
+execute store result score dirt jo+.m.cfg run data get storage joplus:config miner.blocks.dirt
+execute store result score sand jo+.m.cfg run data get storage joplus:config miner.blocks.sand
+execute store result score redsand jo+.m.cfg run data get storage joplus:config miner.blocks.redsand
+execute store result score cdirt jo+.m.cfg run data get storage joplus:config miner.blocks.cdirt
+execute store result score podzol jo+.m.cfg run data get storage joplus:config miner.blocks.podzol
+execute store result score grassb jo+.m.cfg run data get storage joplus:config miner.blocks.grassb
+execute store result score stone jo+.m.cfg run data get storage joplus:config miner.blocks.stone
+execute store result score infstone jo+.m.cfg run data get storage joplus:config miner.blocks.infstone
+execute store result score cobble jo+.m.cfg run data get storage joplus:config miner.blocks.cobble
+execute store result score infcobb jo+.m.cfg run data get storage joplus:config miner.blocks.infcobb
+execute store result score granite jo+.m.cfg run data get storage joplus:config miner.blocks.granite
+execute store result score diorite jo+.m.cfg run data get storage joplus:config miner.blocks.diorite
+execute store result score andesite jo+.m.cfg run data get storage joplus:config miner.blocks.andesite
+execute store result score gravel jo+.m.cfg run data get storage joplus:config miner.blocks.gravel
+execute store result score trct jo+.m.cfg run data get storage joplus:config miner.blocks.trct
+execute store result score whittrct jo+.m.cfg run data get storage joplus:config miner.blocks.whittrct
+execute store result score orantrct jo+.m.cfg run data get storage joplus:config miner.blocks.orantrct
+execute store result score magetrct jo+.m.cfg run data get storage joplus:config miner.blocks.magetrct
+execute store result score lblutrct jo+.m.cfg run data get storage joplus:config miner.blocks.lblutrct
+execute store result score yelltrct jo+.m.cfg run data get storage joplus:config miner.blocks.yelltrct
+execute store result score limetrct jo+.m.cfg run data get storage joplus:config miner.blocks.limetrct
+execute store result score pinktrct jo+.m.cfg run data get storage joplus:config miner.blocks.pinktrct
+execute store result score graytrct jo+.m.cfg run data get storage joplus:config miner.blocks.graytrct
+execute store result score lgratrct jo+.m.cfg run data get storage joplus:config miner.blocks.lgratrct
+execute store result score cyantrct jo+.m.cfg run data get storage joplus:config miner.blocks.cyantrct
+execute store result score purptrct jo+.m.cfg run data get storage joplus:config miner.blocks.purptrct
+execute store result score bluetrct jo+.m.cfg run data get storage joplus:config miner.blocks.bluetrct
+execute store result score browtrct jo+.m.cfg run data get storage joplus:config miner.blocks.browtrct
+execute store result score greetrct jo+.m.cfg run data get storage joplus:config miner.blocks.greetrct
+execute store result score redtrct jo+.m.cfg run data get storage joplus:config miner.blocks.redtrct
+execute store result score blactrct jo+.m.cfg run data get storage joplus:config miner.blocks.blactrct
+execute store result score cutsnds jo+.m.cfg run data get storage joplus:config miner.blocks.cutsnds
+execute store result score snds jo+.m.cfg run data get storage joplus:config miner.blocks.snds
+execute store result score cutrsnds jo+.m.cfg run data get storage joplus:config miner.blocks.cutrsnds
+execute store result score rsnds jo+.m.cfg run data get storage joplus:config miner.blocks.rsnds
+execute store result score ironore jo+.m.cfg run data get storage joplus:config miner.blocks.ironore
+execute store result score coalore jo+.m.cfg run data get storage joplus:config miner.blocks.coalore
+execute store result score goldore jo+.m.cfg run data get storage joplus:config miner.blocks.goldore
+execute store result score rdstnore jo+.m.cfg run data get storage joplus:config miner.blocks.rdstnore
+execute store result score ngoldore jo+.m.cfg run data get storage joplus:config miner.blocks.ngoldore
+execute store result score nquarore jo+.m.cfg run data get storage joplus:config miner.blocks.nquarore
+execute store result score glowston jo+.m.cfg run data get storage joplus:config miner.blocks.glowston
+execute store result score dmndore jo+.m.cfg run data get storage joplus:config miner.blocks.dmndore
+execute store result score emerore jo+.m.cfg run data get storage joplus:config miner.blocks.emerore

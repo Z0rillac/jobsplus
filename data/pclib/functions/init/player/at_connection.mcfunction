@@ -1,6 +1,6 @@
 #########################################
-function jobsplus:jobsplus/jobs/miner/reward/0
-function jobsplus:jobsplus/jobs/miner/level/check
+function jobsplus:jobs/miner/reward/0
+function jobsplus:jobs/miner/level/check
 
 
 

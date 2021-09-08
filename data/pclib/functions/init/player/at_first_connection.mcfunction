@@ -1,7 +1,7 @@
 ##########################################
 
 
-function jobsplus:jobsplus/jobs/miner/reward/0
+function jobsplus:jobs/miner/reward/0
 
 
 ##########################################
