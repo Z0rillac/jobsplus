@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values": [
+        "jobsplus:jobsplus/reset",
+        "pclib:reset"
+    ]
+}

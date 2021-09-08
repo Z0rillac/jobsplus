@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values": [
+        "jobsplus:jobsplus/main",
+        "pclib:main"
+    ]
+}
