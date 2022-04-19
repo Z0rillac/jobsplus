@@ -5,100 +5,94 @@
  # Created by Zorillac.
 ##
 
-#LVL0
+execute store success score hold_silk_touch jobsplus.temp if data entity @s SelectedItem.tag.Enchantments[{id:"minecraft:silk_touch"}]
 
-execute as @a[scores={jo+.mnd.sand=1..,jo+.can.sand=1}] run function jobsplus:jobs/miner/detect/event/sand
-scoreboard players set * jo+.mnd.sand 0
-execute as @a[scores={jo+.mnd.redsand=1..,jo+.can.redsand=1}] run function jobsplus:jobs/miner/detect/event/redsand
-scoreboard players set * jo+.mnd.redsand 0
-execute as @a[scores={jo+.mnd.dirt=1..,jo+.can.dirt=1}] run function jobsplus:jobs/miner/detect/event/dirt
-scoreboard players set * jo+.mnd.dirt 0
-execute as @a[scores={jo+.mnd.cdirt=1..,jo+.can.cdirt=1}] run function jobsplus:jobs/miner/detect/event/cdirt
-scoreboard players set * jo+.mnd.cdirt 0
-execute as @a[scores={jo+.mnd.podzol=1..,jo+.can.podzol=1}] run function jobsplus:jobs/miner/detect/event/podzol
-scoreboard players set * jo+.mnd.podzol 0
-execute as @a[scores={jo+.mnd.grassb=1..,jo+.can.grassb=1}] run function jobsplus:jobs/miner/detect/event/grassb
-scoreboard players set * jo+.mnd.grassb 0
+#LVL0
+execute if score @s jobsplus.mined.sand matches 1.. if score @s jobsplus.can.mined.sand matches 1 run function jobsplus:jobs/miner/detect/event/sand
+execute if score @s jobsplus.mined.red_sand matches 1.. if score @s jobsplus.can.mined.red_sand matches 1 run function jobsplus:jobs/miner/detect/event/red_sand
+execute if score @s jobsplus.mined.dirt matches 1.. if score @s jobsplus.can.mined.dirt matches 1 run function jobsplus:jobs/miner/detect/event/dirt
+execute if score @s jobsplus.mined.coarse_dirt matches 1.. if score @s jobsplus.can.mined.coarse_dirt matches 1 run function jobsplus:jobs/miner/detect/event/coarse_dirt
+execute if score @s jobsplus.mined.podzol matches 1.. if score @s jobsplus.can.mined.podzol matches 1 run function jobsplus:jobs/miner/detect/event/podzol
+execute if score @s jobsplus.mined.grass_block matches 1.. if score @s jobsplus.can.mined.grass_block matches 1 run function jobsplus:jobs/miner/detect/event/grass_block
 
 #LVL1
-
-execute as @a[scores={jo+.mnd.stone=1..,jo+.can.stone=1}] run function jobsplus:jobs/miner/detect/event/stone
-scoreboard players set * jo+.mnd.stone 0
-execute as @a[scores={jo+.mnd.infstone=1..,jo+.can.infstone=1}] run function jobsplus:jobs/miner/detect/event/infstone
-scoreboard players set * jo+.mnd.infstone 0
-execute as @a[scores={jo+.mnd.cobble=1..,jo+.can.cobble=1}] run function jobsplus:jobs/miner/detect/event/cobble
-scoreboard players set * jo+.mnd.cobble 0
-execute as @a[scores={jo+.mnd.infcobb=1..,jo+.can.infcobb=1}] run function jobsplus:jobs/miner/detect/event/infcobb
-scoreboard players set * jo+.mnd.infcobb 0
-execute as @a[scores={jo+.mnd.granite=1..,jo+.can.granite=1}] run function jobsplus:jobs/miner/detect/event/granite
-scoreboard players set * jo+.mnd.granite 0
-execute as @a[scores={jo+.mnd.diorite=1..,jo+.can.diorite=1}] run function jobsplus:jobs/miner/detect/event/diorite
-scoreboard players set * jo+.mnd.diorite 0
-execute as @a[scores={jo+.mnd.andesite=1..,jo+.can.andesite=1}] run function jobsplus:jobs/miner/detect/event/andesite
-scoreboard players set * jo+.mnd.andesite 0
-execute as @a[scores={jo+.mnd.gravel=1..,jo+.can.gravel=1}] run function jobsplus:jobs/miner/detect/event/gravel
-scoreboard players set * jo+.mnd.gravel 0
-execute as @a[scores={jo+.mnd.trct=1..,jo+.can.trct=1}] run function jobsplus:jobs/miner/detect/event/trct
-scoreboard players set * jo+.mnd.trct 0
-execute as @a[scores={jo+.mnd.whittrct=1..,jo+.can.whittrct=1}] run function jobsplus:jobs/miner/detect/event/whittrct
-scoreboard players set * jo+.mnd.whittrct 0
-execute as @a[scores={jo+.mnd.orantrct=1..,jo+.can.orantrct=1}] run function jobsplus:jobs/miner/detect/event/orantrct
-scoreboard players set * jo+.mnd.orantrct 0
-execute as @a[scores={jo+.mnd.magetrct=1..,jo+.can.magetrct=1}] run function jobsplus:jobs/miner/detect/event/magetrct
-scoreboard players set * jo+.mnd.magetrct 0
-execute as @a[scores={jo+.mnd.lblutrct=1..,jo+.can.lblutrct=1}] run function jobsplus:jobs/miner/detect/event/lblutrct
-scoreboard players set * jo+.mnd.lblutrct 0
-execute as @a[scores={jo+.mnd.yelltrct=1..,jo+.can.yelltrct=1}] run function jobsplus:jobs/miner/detect/event/yelltrct
-scoreboard players set * jo+.mnd.yelltrct 0
-execute as @a[scores={jo+.mnd.limetrct=1..,jo+.can.limetrct=1}] run function jobsplus:jobs/miner/detect/event/limetrct
-scoreboard players set * jo+.mnd.limetrct 0
-execute as @a[scores={jo+.mnd.pinktrct=1..,jo+.can.pinktrct=1}] run function jobsplus:jobs/miner/detect/event/pinktrct
-scoreboard players set * jo+.mnd.pinktrct 0
-execute as @a[scores={jo+.mnd.graytrct=1..,jo+.can.graytrct=1}] run function jobsplus:jobs/miner/detect/event/graytrct
-scoreboard players set * jo+.mnd.graytrct 0
-execute as @a[scores={jo+.mnd.lgratrct=1..,jo+.can.lgratrct=1}] run function jobsplus:jobs/miner/detect/event/lgratrct
-scoreboard players set * jo+.mnd.lgratrct 0
-execute as @a[scores={jo+.mnd.cyantrct=1..,jo+.can.cyantrct=1}] run function jobsplus:jobs/miner/detect/event/cyantrct
-scoreboard players set * jo+.mnd.cyantrct 0
-execute as @a[scores={jo+.mnd.purptrct=1..,jo+.can.purptrct=1}] run function jobsplus:jobs/miner/detect/event/purptrct
-scoreboard players set * jo+.mnd.purptrct 0
-execute as @a[scores={jo+.mnd.bluetrct=1..,jo+.can.bluetrct=1}] run function jobsplus:jobs/miner/detect/event/bluetrct
-scoreboard players set * jo+.mnd.bluetrct 0
-execute as @a[scores={jo+.mnd.browtrct=1..,jo+.can.browtrct=1}] run function jobsplus:jobs/miner/detect/event/browtrct
-scoreboard players set * jo+.mnd.browtrct 0
-execute as @a[scores={jo+.mnd.greetrct=1..,jo+.can.greetrct=1}] run function jobsplus:jobs/miner/detect/event/greetrct
-scoreboard players set * jo+.mnd.greetrct 0
-execute as @a[scores={jo+.mnd.redtrct=1..,jo+.can.redtrct=1}] run function jobsplus:jobs/miner/detect/event/redtrct
-scoreboard players set * jo+.mnd.redtrct 0
-execute as @a[scores={jo+.mnd.blactrct=1..,jo+.can.blactrct=1}] run function jobsplus:jobs/miner/detect/event/blactrct
-scoreboard players set * jo+.mnd.blactrct 0
+execute if score @s jobsplus.mined.stone matches 1.. if score @s jobsplus.can.mined.stone matches 1 run function jobsplus:jobs/miner/detect/event/stone
+execute if score @s jobsplus.mined.cobblestone matches 1.. if score @s jobsplus.can.mined.cobblestone matches 1 run function jobsplus:jobs/miner/detect/event/cobblestone
+execute if score @s jobsplus.mined.granite matches 1.. if score @s jobsplus.can.mined.granite matches 1 run function jobsplus:jobs/miner/detect/event/granite
+execute if score @s jobsplus.mined.diorite matches 1.. if score @s jobsplus.can.mined.diorite matches 1 run function jobsplus:jobs/miner/detect/event/diorite
+execute if score @s jobsplus.mined.andesite matches 1.. if score @s jobsplus.can.mined.andesite matches 1 run function jobsplus:jobs/miner/detect/event/andesite
+execute if score @s jobsplus.mined.gravel matches 1.. if score @s jobsplus.can.mined.gravel matches 1 run function jobsplus:jobs/miner/detect/event/gravel
+execute if score @s jobsplus.mined.terracotta matches 1.. if score @s jobsplus.can.mined.terracotta matches 1 run function jobsplus:jobs/miner/detect/event/terracotta
+execute if score @s jobsplus.mined.white_terracotta matches 1.. if score @s jobsplus.can.mined.white_terracotta matches 1 run function jobsplus:jobs/miner/detect/event/white_terracotta
+execute if score @s jobsplus.mined.orange_terracotta matches 1.. if score @s jobsplus.can.mined.orange_terracotta matches 1 run function jobsplus:jobs/miner/detect/event/orange_terracotta
+execute if score @s jobsplus.mined.magenta_terracotta matches 1.. if score @s jobsplus.can.mined.magenta_terracotta matches 1 run function jobsplus:jobs/miner/detect/event/magenta_terracotta
+execute if score @s jobsplus.mined.light_blue_terracotta matches 1.. if score @s jobsplus.can.mined.light_blue_terracotta matches 1 run function jobsplus:jobs/miner/detect/event/light_blue_terracotta
+execute if score @s jobsplus.mined.yellow_terracotta matches 1.. if score @s jobsplus.can.mined.yellow_terracotta matches 1 run function jobsplus:jobs/miner/detect/event/yellow_terracotta
+execute if score @s jobsplus.mined.lime_terracotta matches 1.. if score @s jobsplus.can.mined.lime_terracotta matches 1 run function jobsplus:jobs/miner/detect/event/lime_terracotta
+execute if score @s jobsplus.mined.pink_terracotta matches 1.. if score @s jobsplus.can.mined.pink_terracotta matches 1 run function jobsplus:jobs/miner/detect/event/pink_terracotta
+execute if score @s jobsplus.mined.gray_terracotta matches 1.. if score @s jobsplus.can.mined.gray_terracotta matches 1 run function jobsplus:jobs/miner/detect/event/gray_terracotta
+execute if score @s jobsplus.mined.light_gray_terracotta matches 1.. if score @s jobsplus.can.mined.light_gray_terracotta matches 1 run function jobsplus:jobs/miner/detect/event/light_gray_terracotta
+execute if score @s jobsplus.mined.cyan_terracotta matches 1.. if score @s jobsplus.can.mined.cyan_terracotta matches 1 run function jobsplus:jobs/miner/detect/event/cyan_terracotta
+execute if score @s jobsplus.mined.purple_terracotta matches 1.. if score @s jobsplus.can.mined.purple_terracotta matches 1 run function jobsplus:jobs/miner/detect/event/purple_terracotta
+execute if score @s jobsplus.mined.blue_terracotta matches 1.. if score @s jobsplus.can.mined.blue_terracotta matches 1 run function jobsplus:jobs/miner/detect/event/blue_terracotta
+execute if score @s jobsplus.mined.brown_terracotta matches 1.. if score @s jobsplus.can.mined.brown_terracotta matches 1 run function jobsplus:jobs/miner/detect/event/brown_terracotta
+execute if score @s jobsplus.mined.green_terracotta matches 1.. if score @s jobsplus.can.mined.green_terracotta matches 1 run function jobsplus:jobs/miner/detect/event/green_terracotta
+execute if score @s jobsplus.mined.red_terracotta matches 1.. if score @s jobsplus.can.mined.red_terracotta matches 1 run function jobsplus:jobs/miner/detect/event/red_terracotta
+execute if score @s jobsplus.mined.black_terracotta matches 1.. if score @s jobsplus.can.mined.black_terracotta matches 1 run function jobsplus:jobs/miner/detect/event/black_terracotta
 
 #LVL10
-
-execute as @a[scores={jo+.mnd.ironore=1..,jo+.can.ironore=1}] run function jobsplus:jobs/miner/detect/event/ironore
-scoreboard players set * jo+.mnd.ironore 0 
-execute as @a[scores={jo+.mnd.coalore=1..,jo+.can.coalore=1}] unless data entity @s SelectedItem.tag.Enchantments[{id:"minecraft:silk_touch"}] run function jobsplus:jobs/miner/detect/event/coalore
-scoreboard players set * jo+.mnd.coalore 0
+execute if score @s jobsplus.mined.iron_ore matches 1.. if score @s jobsplus.can.mined.iron_ore matches 1 run function jobsplus:jobs/miner/detect/event/iron_ore
+execute if score @s jobsplus.mined.coal_ore matches 1.. if score @s jobsplus.can.mined.coal_ore matches 1 if score hold_silk_touch jobsplus.temp matches 0 run function jobsplus:jobs/miner/detect/event/coal_ore
 
 #LVL20
-
-execute as @a[scores={jo+.mnd.goldore=1..,jo+.can.goldore=1}] run function jobsplus:jobs/miner/detect/event/goldore
-scoreboard players set * jo+.mnd.goldore 0
-execute as @a[scores={jo+.mnd.rdstnore=1..,jo+.can.rdstnore=1}] unless data entity @s SelectedItem.tag.Enchantments[{id:"minecraft:silk_touch"}] run function jobsplus:jobs/miner/detect/event/rdstnore
-scoreboard players set * jo+.mnd.rdstnore 0
+execute if score @s jobsplus.mined.gold_ore matches 1.. if score @s jobsplus.can.mined.gold_ore matches 1 run function jobsplus:jobs/miner/detect/event/gold_ore
+execute if score @s jobsplus.mined.redstone_ore matches 1.. if score @s jobsplus.can.mined.redstone_ore matches 1 if score hold_silk_touch jobsplus.temp matches 0 run function jobsplus:jobs/miner/detect/event/redstone_ore
 
 #LVL30
-
-execute as @a[scores={jo+.mnd.ngoldore=1..,jo+.can.ngoldore=1}] unless data entity @s SelectedItem.tag.Enchantments[{id:"minecraft:silk_touch"}] run function jobsplus:jobs/miner/detect/event/ngoldore
-scoreboard players set * jo+.mnd.ngoldore 0
-execute as @a[scores={jo+.mnd.nquarore=1..,jo+.can.nquarore=1}] unless data entity @s SelectedItem.tag.Enchantments[{id:"minecraft:silk_touch"}] run function jobsplus:jobs/miner/detect/event/nquarore
-scoreboard players set * jo+.mnd.nquarore 0
-execute as @a[scores={jo+.mnd.glowston=1..,jo+.can.glowston=1}] unless data entity @s SelectedItem.tag.Enchantments[{id:"minecraft:silk_touch"}] run function jobsplus:jobs/miner/detect/event/glowston
-scoreboard players set * jo+.mnd.glowston 0
+execute if score @s jobsplus.mined.nether_gold_ore matches 1.. if score @s jobsplus.can.mined.nether_gold_ore matches 1 if score hold_silk_touch jobsplus.temp matches 0 run function jobsplus:jobs/miner/detect/event/nether_gold_ore
+execute if score @s jobsplus.mined.nether_quartz_ore matches 1.. if score @s jobsplus.can.mined.nether_quartz_ore matches 1 if score hold_silk_touch jobsplus.temp matches 0 run function jobsplus:jobs/miner/detect/event/nether_quartz_ore
+execute if score @s jobsplus.mined.glowstone matches 1.. if score @s jobsplus.can.mined.glowstone matches 1 if score hold_silk_touch jobsplus.temp matches 0 run function jobsplus:jobs/miner/detect/event/glowstone
 
 #LVL40
+execute if score @s jobsplus.mined.diamond_ore matches 1.. if score @s jobsplus.can.mined.diamond_ore matches 1 if score hold_silk_touch jobsplus.temp matches 0 run function jobsplus:jobs/miner/detect/event/diamond_ore
+execute if score @s jobsplus.mined.emerald_ore matches 1.. if score @s jobsplus.can.mined.emerald_ore matches 1 if score hold_silk_touch jobsplus.temp matches 0 run function jobsplus:jobs/miner/detect/event/emerald_ore
 
-execute as @a[scores={jo+.mnd.dmndore=1..,jo+.can.dmndore=1}] unless data entity @s SelectedItem.tag.Enchantments[{id:"minecraft:silk_touch"}] run function jobsplus:jobs/miner/detect/event/dmndore
-scoreboard players set * jo+.mnd.dmndore 0
-execute as @a[scores={jo+.mnd.emerore=1..,jo+.can.emerore=1}] unless data entity @s SelectedItem.tag.Enchantments[{id:"minecraft:silk_touch"}] run function jobsplus:jobs/miner/detect/event/emerore
-scoreboard players set * jo+.mnd.emerore 0
+#RESET
+scoreboard players set @s jobsplus.mined.sand 0
+scoreboard players set @s jobsplus.mined.red_sand 0
+scoreboard players set @s jobsplus.mined.dirt 0
+scoreboard players set @s jobsplus.mined.podzol 0
+scoreboard players set @s jobsplus.mined.coarse_dirt 0
+scoreboard players set @s jobsplus.mined.grass_block 0
+scoreboard players set @s jobsplus.mined.stone 0
+scoreboard players set @s jobsplus.mined.cobblestone 0
+scoreboard players set @s jobsplus.mined.granite 0
+scoreboard players set @s jobsplus.mined.diorite 0
+scoreboard players set @s jobsplus.mined.andesite 0
+scoreboard players set @s jobsplus.mined.gravel 0
+scoreboard players set @s jobsplus.mined.terracotta 0
+scoreboard players set @s jobsplus.mined.white_terracotta 0
+scoreboard players set @s jobsplus.mined.orange_terracotta 0
+scoreboard players set @s jobsplus.mined.magenta_terracotta 0
+scoreboard players set @s jobsplus.mined.light_blue_terracotta 0
+scoreboard players set @s jobsplus.mined.yellow_terracotta 0
+scoreboard players set @s jobsplus.mined.lime_terracotta 0
+scoreboard players set @s jobsplus.mined.pink_terracotta 0
+scoreboard players set @s jobsplus.mined.gray_terracotta 0
+scoreboard players set @s jobsplus.mined.light_gray_terracotta 0
+scoreboard players set @s jobsplus.mined.cyan_terracotta 0
+scoreboard players set @s jobsplus.mined.purple_terracotta 0
+scoreboard players set @s jobsplus.mined.blue_terracotta 0
+scoreboard players set @s jobsplus.mined.brown_terracotta 0
+scoreboard players set @s jobsplus.mined.green_terracotta 0
+scoreboard players set @s jobsplus.mined.red_terracotta 0
+scoreboard players set @s jobsplus.mined.black_terracotta 0
+scoreboard players set @s jobsplus.mined.iron_ore 0 
+scoreboard players set @s jobsplus.mined.coal_ore 0
+scoreboard players set @s jobsplus.mined.gold_ore 0
+scoreboard players set @s jobsplus.mined.redstone_ore 0
+scoreboard players set @s jobsplus.mined.nether_gold_ore 0
+scoreboard players set @s jobsplus.mined.nether_quartz_ore 0
+scoreboard players set @s jobsplus.mined.glowstone 0
+scoreboard players set @s jobsplus.mined.diamond_ore 0
+scoreboard players set @s jobsplus.mined.emerald_ore 0

@@ -7,8 +7,8 @@
 
 function jobsplus:jobs/miner/detect/load
 
-scoreboard objectives add jo+.p.m.lvl dummy
-scoreboard objectives add jo+.p.m.xp dummy
-scoreboard objectives add jo+.m.cfg dummy
-scoreboard objectives add jo+.p.m.combo dummy
-scoreboard objectives add jo+.p.m.combot dummy
+scoreboard objectives add jobsplus.p.m.lvl dummy
+scoreboard objectives add jobsplus.p.m.xp dummy
+scoreboard objectives add jobsplus.m.cfg dummy
+scoreboard objectives add jobsplus.p.m.combo dummy
+scoreboard objectives add jobsplus.p.m.combot dummy

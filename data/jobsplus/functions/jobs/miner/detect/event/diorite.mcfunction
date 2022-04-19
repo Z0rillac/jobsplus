@@ -6,13 +6,14 @@
 ##
 
 
-scoreboard players operation @s jo+.p.temp = @s jo+.mnd.diorite
-scoreboard players operation @s jo+.p.temp *= diorite jo+.m.cfg
-scoreboard players operation @s jo+.p.m.xp += @s jo+.p.temp
+scoreboard players operation @s jobsplus.p.temp = @s jobsplus.mined.diorite
+scoreboard players operation @s jobsplus.p.temp *= diorite jobsplus.m.cfg
+scoreboard players operation @s jobsplus.p.m.xp += @s jobsplus.p.temp
 
-scoreboard players set @s jo+.p.m.combot 60
-scoreboard players operation @s jo+.p.m.combo += @s jo+.p.temp
+scoreboard players set @s jobsplus.p.m.combot 60
+scoreboard players operation @s jobsplus.p.m.combo += @s jobsplus.p.temp
 
-title @s actionbar ["",{"text":"+","color":"green"},{"score":{"name":"@s","objective":"jo+.p.m.combo"},"color":"green"},{"text":" XP for miner (Diorite)","color":"gold"}]
+data modify storage jobsplus:temp root.slot.0 set value '{"translate":"block.minecraft.diorite"}'
+function jobsplus:texts/combo_toast.miner
 
 function jobsplus:jobs/miner/level/check
